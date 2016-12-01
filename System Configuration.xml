@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AF xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OSIsoft.AF.xsd" SchemaVersion="2.0" SoftwareVersion="2.8.0.7444" ExportMode="NoUniqueID" PISystem="KHASHIMOTOE6440" Database="Configuration" Description="A store for configuration data." Created="2016-07-21T06:42:59.9190639Z" id="c8b2eb47-a84b-11e5-82b2-80000b19ed70" ParentKey="c8b2eb41-a84b-11e5-82b2-80000b19ed70" ExportedObject="System Configuration" ExportedType="AFElement" Identity="Element" PIPersist="218 {9895150E-085D-4fcb-A16D-5EF5D2527196} 2\{b827378e-7861-4b20-9df1-5230125710b6}\Elements[{c8b2eb47-a84b-11e5-82b2-80000b19ed70}]*KHASHIMOTOE6440\Configuration\OSIsoft\PI Web API\KHASHIMOTOE6440\System Configuration">
+  <AFElement>
+    <Name>System Configuration</Name>
+    <AFAttribute>
+      <Name>AuthenticationMethods</Name>
+      <Type>String[]</Type>
+      <Timestamp>2016-07-21T06:42:54.3177423Z</Timestamp>
+      <Value type="String[1]">
+        <Item>Kerberos</Item>
+      </Value>
+    </AFAttribute>
+    <AFAttribute>
+      <Name>CorsExposedHeaders</Name>
+      <Type>String</Type>
+      <Value type="String">Allow,Content-Encoding,Content-Length,Date,Location</Value>
+    </AFAttribute>
+    <AFAttribute>
+      <Name>CorsHeaders</Name>
+      <Type>String</Type>
+      <Value type="String">*</Value>
+    </AFAttribute>
+    <AFAttribute>
+      <Name>CorsMethods</Name>
+      <Type>String</Type>
+      <Value type="String">*</Value>
+    </AFAttribute>
+    <AFAttribute>
+      <Name>CorsOrigins</Name>
+      <Type>String</Type>
+      <Value type="String">*</Value>
+    </AFAttribute>
+    <AFAttribute>
+      <Name>CorsSupportsCredentials</Name>
+      <Type>Boolean</Type>
+      <Value type="Boolean">True</Value>
+    </AFAttribute>
+    <AFAttribute>
+      <Name>DisableWrites</Name>
+      <Type>Boolean</Type>
+      <Value type="Boolean">False</Value>
+    </AFAttribute>
+    <AFAttribute>
+      <Name>SearchBoosts</Name>
+      <Type>Single[]</Type>
+      <Value type="Single[7]">
+        <Item>1</Item>
+        <Item>0.8</Item>
+        <Item>0.5</Item>
+        <Item>0.5</Item>
+        <Item>0.5</Item>
+        <Item>0.5</Item>
+        <Item>0.5</Item>
+      </Value>
+    </AFAttribute>
+    <AFAttribute>
+      <Name>SearchPointAttributes</Name>
+      <Type>String[]</Type>
+      <Value type="String[4]">
+        <Item>pointsource</Item>
+        <Item>instrumenttag</Item>
+        <Item>location1</Item>
+        <Item>exdesc</Item>
+      </Value>
+    </AFAttribute>
+    <AFAttribute>
+      <Name>SearchScanInterval</Name>
+      <Type>Int32</Type>
+      <Value type="Int32">60</Value>
+    </AFAttribute>
+  </AFElement>
+</AF>
