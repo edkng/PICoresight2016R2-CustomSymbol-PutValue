@@ -1,6 +1,9 @@
-(function (CS) {
+(function (PV) {
+    var userName = PV.IdentityContext.FriendlyUserName.toUpperCase();
+    var index = userName.indexOf("\\",0);
+    var userNamewithoutDomain = userName.substr(index + 1);
     function symbolVis() { }
-    CS.deriveVisualizationFromBase(symbolVis);
+    PV.deriveVisualizationFromBase(symbolVis);
 
     symbolVis.prototype.init = function (scope) {
 	    this.onDataUpdate = dataUpdate;
@@ -17,7 +20,7 @@
 		    }
 	    }
 	    scope.putvalue = function() {  
-            var piwebapiaddress = "ServerName";  
+            var piwebapiaddress = "khashimotoe6440";  
             //scope.path contains pi:\\servername\tagname or af:\\servername\databasename\element...|attribute  
             var ini = scope.path.substr(0,3);  
             var orgpath = scope.path.substr(3,10000);  
@@ -51,8 +54,8 @@
 	};
     var definition = {
         typeName: 'putvalue',
-        iconUrl:'Images/pen.svg',
-        datasourceBehavior: CS.Extensibility.Enums.DatasourceBehaviors.Single,
+        iconUrl:'/Scripts/app/editor/symbols/ext/Icons/pen.svg',
+        datasourceBehavior: PV.Extensibility.Enums.DatasourceBehaviors.Single,
         visObjectType: symbolVis,
         getDefaultConfig: function() {
             return {
@@ -68,5 +71,9 @@
     	configTitle: 'Format Symbol',
     	StateVariables: [ 'MultistateColor' ]
     };
-    CS.symbolCatalog.register(definition);
-})(window.Coresight);
+    
+    if (userNamewithoutDomain == 'KHASHIMOTO')
+    {
+        PV.symbolCatalog.register(definition);
+    }
+})(window.PIVisualization);
