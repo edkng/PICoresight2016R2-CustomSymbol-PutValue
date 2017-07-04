@@ -23,7 +23,7 @@
      }  
 
      scope.putvalue = function() {    
-            var piwebapiaddress = "khashimotoe6440";    
+            var piwebapiaddress = "localhost";    
             //scope.path contains pi:\\servername\tagname or af:\\servername\databasename\element...|attribute    
             var ini = scope.path.substr(0,3);    
             var orgpath = scope.path.substr(3,10000);    
@@ -75,10 +75,6 @@
         },  
     configTitle: 'Format Symbol',  
     StateVariables: [ 'MultistateColor' ]  
-    };  
-      
-    if (userNamewithoutDomain == 'KHASHIMOTO')  
-    {  
-        PV.symbolCatalog.register(definition);  
-    }  
+    };
+    PV.symbolCatalog.register(definition);  
 })(window.PIVisualization);  
